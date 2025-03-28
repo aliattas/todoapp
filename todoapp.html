@@ -12,31 +12,28 @@
     <div class="todocont" >
         <div class="add none flex" >
             <div>
-            <h3 class="center"  >العنوان</h3>
+            <h3 class="center"  >Title</h3>
             <input type="text"  id="adite" onkeypress="searchFromAll" >
             </div>
-            <h4 class="mb-1rem">تفاصيل</h4>
+            <h4 class="mb-1rem">Details</h4>
             <textarea class= 'mb-1rem' id="" cols="65" rows="20" ></textarea>
             <div class="stats mb-1rem">
                 <button id="save">save</button>
-                <button id="cansle" value="0">cansle</button>
+                <button id="cancel" value="0">cancel</button>
             </div>
         </div>
         <div class="deleteop none">
-            <button id = 'deletefromall'>delete</button>
-            <button id="cansleDelete" data-data="deleteop">cansle</button>
         </div>
         <div class="things">
             <div class="menu">Menu</div>
             <div class="search mb-1rem">
-                <button onclick="searchFromAll()">
+                <button id="searchButton">
                 <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
                 <input type="text" class="text" placeholder="search in the lists">
             </div>
             <div class="stats mb-1rem">
-                <button  id="add">add</button>
-                <button id="delete">delete</button>
+                <button  id="add" class="addButton">add</button>
             </div>
         </div>
         <div class="cards" dropzone="false" > 
